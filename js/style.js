@@ -1,0 +1,1 @@
+console.log("scrpit,js connected!");
