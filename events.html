@@ -17,45 +17,76 @@
             </div>
             <nav>
                 <a href="index.html">Dashboard</a>
-                <a href="events.html">Events</a>
+                <a href="events.html" class="active">Events</a>
                 <a href="dining.html">Dining</a>
             </nav>
         </header>
 
-        <main id="events" class="container">
+        <main id="events">
+            <div class="container">
 
-            <div>
-                <h2>Events</h2>
-                <input type="text" placeholder="Search events">
-            </div>
+                <div class="events-header">
+                    <h2>Events</h2>
+                    <input type="text" id="search-events" placeholder="Search-event ..." class="search-input">
+                </div>
 
-            <section>
-                <h3>Event Title</h3>
-                <div>X</div>
-                <p>Date: [Date]</p>
-                <p>Time: [Time]</p>
-                <p>Location: [Location]</p>
-                <button>View Details</button>
-            </section>
+                <div class="events-list">
 
-            <section>
-                <h3>Event Title</h3>
-                <div>X</div>
-                <p>Date: [Date]</p>
-                <p>Time: [Time]</p>
-                <p>Location: [Location]</p>
-                <button>View Details</button>
-            </section>
+                    <section class="event-card">
 
-           <section>
-                <h3>Event Title</h3>
-                <div>X</div>
-                <p>Date: [Date]</p>
-                <p>Time: [Time]</p>
-                <p>Location: [Location]</p>
-                <button>View Details</button>
-            </section>
+                        <img src="img/Art (1).png" alt="Senior Art Exhibitiont" class="event-image">
 
+                        <div class="events-header">
+                            <h3>Senior Exhibition and Artist Talk: Zoe Durston</h3>                            
+                        </div>
+
+                        <div class="events-details">
+                            <p><strong>Date:</strong> April 27-30, 2026</p>
+                            <p><strong>Time:</strong> Gallery Hours (9:00 a.m. - 5:00 p.m.)</p>
+                            <p><strong>Location:</strong> Carlson Tower Galleries</p>
+                        </div>
+
+                        <a href="https://www.northpark.edu/event-calendar/student-exhibition-zoe-durston-c-26-fine-art/" class="btn-view-details">View Detail</a>
+                    </section>
+                    
+                    <section class="event-card">
+
+                        <img src="img/Spring (1).png" alt="Spring Jazz Band Concert" class="event-image">
+
+                        <div class="events-header">
+                            <h3>Spring Jazz Band Concert</h3>
+                        </div>
+
+                        <div class="events-details">
+                            <p><strong>Date:</strong> May 3, 2026</p>
+                            <p><strong>Time:</strong> 2:30 p.m.</p>
+                            <p><strong>Location:</strong> Anderson Chapel</p>
+                        </div>
+
+                        <a href="https://www.northpark.edu/event-calendar/jazz-band-concert/" class="btn-view-details">View Detail</a>
+                    </section>
+
+
+                    <section class="event-card">
+
+                        <img src="img/Conmencement (1).png" alt="Spring Commencement" class="event-image">
+
+                        <div class="events-header">
+                            <h3>Spring Commencement</h3>
+                        </div>
+
+                        <div class="events-details">
+                            <p><strong>Date:</strong> May 09, 2026</p>
+                            <p><strong>Time:</strong> 1:30 PM</p>
+                            <p><strong>Location:</strong>Helwig Recreation Center</p>
+                        </div>
+
+                        <a href="https://www.northpark.edu/event-calendar/comencement/" class="btn-view-details">View Details</a>
+                    </section>
+
+                </div>
+                
+            </div>               
         </main>
 
         <footer>
