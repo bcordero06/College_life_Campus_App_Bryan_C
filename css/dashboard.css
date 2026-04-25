@@ -1,0 +1,180 @@
+#dashboard .container {
+  max-width: 1200px !important;
+}
+
+.weather-card,
+.quick-actions-card,
+.status-card {
+  min-height: 400px;
+  border: 3px solid #003865;
+}
+
+.subheader {
+  font-weight: bold;
+  font-size: 16px;
+  color: #003865;
+}
+
+/* Quick Actions */
+.quick-action-item,
+.quick-action-box {
+  border: 2px solid #FFC72C !important;
+  background-color: white !important;
+  transition: 0.3s !important;
+  box-shadow: none !important;
+  padding: 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  min-height: 120px;
+  gap: 10px;
+}
+
+.quick-action-item:hover,
+.quick-action-box:hover {
+  background-color: #f7e7a1 !important;
+  transform: translateY(-3px);
+}
+
+.quick-action-item .emoji,
+.quick-action-box .emoji {
+  font-size: 28px;
+  line-height: 1;
+  margin: 0;
+}
+
+.quick-action-item .action-label,
+.quick-action-box .action-label {
+  margin: 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #003865;
+  text-align: center;
+}
+
+a .quick-action-item {
+  color: #003865;
+  text-decoration: none;
+}
+
+/* Status Box */
+.status-box {
+  border: 2px solid #003865;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.status-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  color: #003865;
+}
+
+.status-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #003865;
+}
+
+.status-card p {
+  text-align: center;
+}
+
+#dashboard .row {
+  gap: 20px;
+}
+
+#dashboard .col-md-4 {
+  flex: 0 0 30% !important;
+  max-width: 30% !important;
+}
+
+.quick-actions-card .row.g-3 {
+  gap: 12px;
+}
+
+.qa-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.qa-tile{
+  background: #ffffff;
+  border: 2px solid #FFC72C;
+  border-radius: 0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #003865;
+  transition: 0.2s;
+  display: block;
+}
+
+.qa-tile:hover{
+  background: #f7e7a1;
+}
+
+.qa-tile p{
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #003865;
+}
+
+.qa-emoji{
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 1;
+}
+
+/* DASHBOARD MEDIA QUERIES */
+@media (max-width: 992px) {
+  #dashboard .col-lg-4 {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  #dashboard .row {
+    gap: 15px;
+  }
+
+  .weather-card,
+  .quick-actions-card,
+  .status-card {
+    min-height: 300px;
+  }
+
+  .quick-action-item,
+  .quick-action-box {
+    min-height: 120px;
+    padding: 20px 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #dashboard .col-lg-4,
+  #dashboard .col-md-6,
+  #dashboard .col-md-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  #dashboard .row {
+    gap: 10px;
+  }
+
+  .quick-actions-card .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

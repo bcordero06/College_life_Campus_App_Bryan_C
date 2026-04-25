@@ -1,0 +1,6 @@
+#dining section:first-of-type p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
